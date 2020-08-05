@@ -1,3 +1,5 @@
+mod s3_path;
+
 use crate::storage::S3Storage;
 
 use anyhow::Result;
