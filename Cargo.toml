@@ -1,9 +1,11 @@
 [package]
-name = "datenlord_s3"
-version = "0.1.0"
+name = "s3-server"
+version = "0.0.1"
 authors = ["Nugine <nugine@foxmail.com>"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
+license = "MIT"
+repository = "https://github.com/datenlord/s3-server"
+readme = "README.md"
+description = "S3 service implementation for datenlord"
+keywords = ["s3"]
+categories = ["web-programming"]
