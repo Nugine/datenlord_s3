@@ -110,5 +110,6 @@ jobs:
         with:
           command: build
           args: --example s3
-      - run: ./scripts/s3-auth.sh &
-      - run: ./scripts/mint.sh
+      - run: |
+        ./scripts/s3-auth.sh &
+        ./scripts/mint.sh
