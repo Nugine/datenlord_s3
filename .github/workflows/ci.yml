@@ -113,5 +113,6 @@ jobs:
       - name: Run mint
         run: |
           ./scripts/s3-auth.sh 2> s3-server.log &
+          curl localhost:8014
           ./scripts/mint.sh
       - run: cat s3-server.log
