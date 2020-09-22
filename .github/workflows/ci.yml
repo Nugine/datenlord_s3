@@ -110,7 +110,8 @@ jobs:
         with:
           command: build
           args: --example s3
-      - name: mint
+      - name: Run mint
         run: |
-          ./scripts/s3-auth.sh &
+          ./scripts/s3-auth.sh 2> s3-server.log &
           ./scripts/mint.sh
+      - run: cat s3-server.log
