@@ -112,8 +112,6 @@ jobs:
           args: --example s3
       - name: Run mint
         run: |
-          nohup ./scripts/s3-auth.sh &
+          ./scripts/s3-auth.sh 2>s3-server.log &
           sleep 1
-          curl localhost:8014
           ./scripts/mint.sh
-      - run: cat s3-server.log
