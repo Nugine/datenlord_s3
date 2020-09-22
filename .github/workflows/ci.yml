@@ -95,3 +95,20 @@ jobs:
           version: latest
       - run: cargo generate-lockfile
       - run: cargo audit
+
+  e2e-test:
+    name: E2E Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: ${{ env.CI_RUST_TOOLCHAIN }}
+          override: true
+      - uses: actions-rs/cargo@v1
+        with:
+          command: build
+          args: --example s3
+      - run: ./scripts/s3-auth.sh &
+      - run: ./scripts/mint.sh
