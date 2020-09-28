@@ -132,6 +132,7 @@ jobs:
           mv tmp_run_core run/core
 
           rm remove-packages.list
+          touch remove-packages.list
 
           popd
       
