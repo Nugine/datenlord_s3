@@ -48,7 +48,7 @@ uuid = { version = "0.8.1", features = ["v4"] }
 xml-rs = "0.8.3"
 
 [dev-dependencies]
-tokio = { version = "0.2.22", features = ["full"] }
+tokio = { version = "0.3.2", features = ["full"] }
 async-std = { version = "1.6.3", features = ["tokio02", "attributes"] }
 futures-timer = "3.0.2"
 anyhow = "1.0.32"
