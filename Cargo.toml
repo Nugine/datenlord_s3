@@ -50,7 +50,7 @@ xml-rs = "0.8.3"
 [dev-dependencies]
 anyhow = "1.0.32"
 structopt = "0.3.17"
-tokio = { version = "0.2.22", features = ["full"] }
+tokio = { version = "0.3.3", features = ["full"] }
 tracing-subscriber = { git = "https://github.com/Nugine/tracing", rev = "ea78162c" }
 # tracing-subscriber = "0.2.12"
 
