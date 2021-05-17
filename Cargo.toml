@@ -33,7 +33,7 @@ base64 = "0.13.0"
 chrono = "0.4.19"
 const-str = { version = "0.1.4", features = ["verify-regex"] }
 dotenv = { version = "0.15.0", optional = true }
-faster-hex = "0.5.0"
+faster-hex = "0.6.0"
 futures = "0.3.14"
 hmac = "0.11.0"
 httparse = "1.4.0"
